@@ -1,0 +1,62 @@
+@use "../custom" as *;
+@use "../component/mixins" as *;
+
+.contact-box {
+
+
+    padding: 1rem 0;
+    align-items: center;
+    &--icon {
+        i {
+            font-size: 2.5rem;
+            color: $primary;
+        }
+    }
+
+    &--info {
+        margin-left: 1rem;
+
+        a {
+            text-decoration: none;
+            color: $white;
+            font-size: 1.5rem;
+            font-weight: 600;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+
+        p {
+            color: rgb(92, 92, 92);
+        }
+    }
+}
+
+.social-contact {
+  
+
+    &--desc {
+        color: $white;
+    }
+    &--icon{
+        i{
+            color:$white;
+            font-size: 1.7rem;
+            margin:0 0.5rem;
+            &:hover{
+                color:$primary;
+            }
+        }
+    }
+}
+.footer-desc{
+    padding:3rem 2rem;
+    color: white;
+    h5{
+        font-weight: 700;
+    }
+    li:hover{
+        color: $primary;
+    }
+}

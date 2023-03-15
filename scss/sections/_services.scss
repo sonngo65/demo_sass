@@ -1,0 +1,38 @@
+@use "../custom" as *;
+@use "../component/mixins" as *;
+
+.services {
+    h2 {
+
+        @include media-breakpoint-up(lg) {
+
+            color: black;
+
+        }
+    }
+
+    .services__content {
+        margin-top: 2rem;
+        @include media-breakpoint-up(lg){
+            margin-top: 6rem;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            background-image: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @include media-breakpoint-up(lg){
+                font-size: 2.5rem;
+            }
+        
+        }
+        h3{
+            margin-bottom: 0.5rem;
+        }
+        button{
+            border-color: $primary;
+        }
+    }
+}

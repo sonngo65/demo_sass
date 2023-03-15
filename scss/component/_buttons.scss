@@ -1,0 +1,36 @@
+@use "../custom" as *;
+@use "mixins" as *;
+.btn-rounded {
+    position:relative;
+    text-transform: capitalize;
+    color: $black;
+    padding:0.75rem 4.5rem 0.75rem 1.2rem;
+    border: 0.01rem solid rgba($white,0.6);
+    background-color: $white;
+    font-size: 1rem;
+    font-weight: 700;
+    span{
+        position: absolute;
+        width: 2.5rem;
+        height:2.5rem;
+        background-color: $primary;
+        border-radius: 50%;
+        right: 0.25rem;
+        top:50%;
+        transform: translatey(-50%);
+        i{
+            color:white;
+            @include absoluteCenter;
+            font-size: 1rem;
+        }
+
+    }
+    &:hover{
+
+        @include gradient;
+        color:$white;
+        span{
+            background-color: $black;
+        }
+    }
+}

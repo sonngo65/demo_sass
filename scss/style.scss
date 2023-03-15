@@ -1,0 +1,14 @@
+// ---------------sections----------------
+@use "sections/navbar";
+@use "sections/intro";
+@use "sections/companies";
+@use "sections/services";
+@use "sections/testimonials";
+@use "sections/portfolio";
+@use "sections/get_start";
+@use "sections/footer";
+// --------------component---------------
+@use "component/buttons";
+@use "component/animations";
+@use "component/typography";
+@use "component/images";
